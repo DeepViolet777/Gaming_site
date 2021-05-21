@@ -483,3 +483,69 @@ a {
     }
 
 }
+
+.events {
+    height: 860px;
+    width: 100%;
+    position: relative;
+
+    &_title {
+        position: absolute;
+        top: 35px;
+        left: 660px;
+        z-index: 11;
+    }
+
+    &_text {
+        font-size: 18px;
+        color: rgb(249, 244, 233);
+        line-height: 1.5;
+        text-align: center;
+        position: absolute;
+        bottom:0;
+		left: 500px;
+        width: 940px;
+        height: 45px;
+        z-index: 349;
+    }
+
+    .video {
+        &_container {
+            width: 100%;
+            height: auto;
+            position: relative;
+
+            &::before {
+                content: "";
+                background-image: url(../img/3_VIDEO_shadow_top.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+
+    .play-btn {
+        z-index: 10;
+        background-image: url(../img/3_VIDEO_icon_play.png);
+        height: 234px;
+        width: 236px;
+        position: absolute;
+        top: 400px;
+        left: 860px;
+        cursor: pointer;
+    }
+
+   .scroll{
+	   z-index: 11;
+	   position: absolute;
+	   top: 1010px;
+       left: 910px;
+   }
+}
