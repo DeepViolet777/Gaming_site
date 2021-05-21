@@ -488,6 +488,7 @@ a {
     height: 860px;
     width: 100%;
     position: relative;
+    margin: 0 auto;
 
     &_title {
         position: absolute;
@@ -502,8 +503,8 @@ a {
         line-height: 1.5;
         text-align: center;
         position: absolute;
-        bottom:0;
-		left: 500px;
+        bottom: 0;
+        left: 500px;
         width: 940px;
         height: 45px;
         z-index: 349;
@@ -542,10 +543,77 @@ a {
         cursor: pointer;
     }
 
-   .scroll{
-	   z-index: 11;
-	   position: absolute;
-	   top: 1010px;
-       left: 910px;
-   }
+    .scroll {
+        z-index: 11;
+        position: absolute;
+        top: 990px;
+        left: 910px;
+    }
+}
+
+.leveling {
+    height: 993px;
+    width: 100%;
+    background-image: url(../img/4_MOUNT_bg.jpg);
+    margin-top: 229px;
+	position: relative;
+
+    &_title {
+        margin-top: 229px;
+        margin-left: 550px;
+
+        &-img {
+            margin-top: 25px;
+        }
+    }
+
+    &_rating {
+        width: 1300px;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 430px;
+        margin-left: 300px;
+
+       
+    }
+
+	.rating{
+		&_container{
+			position: relative;
+		}
+
+		&_subtitle {
+		color: rgb(255, 196, 25);
+		line-height: 1.167;
+		text-align: center;
+		text-shadow: 0px 5px 30px rgba(35, 27, 32, 0.004);
+		position: absolute;
+		width: 168px;
+		height: 82px;
+		z-index: 392;
+		top: 90px;
+		left:180px;
+	}
+  }
+
+  &_text{
+	display:block;
+	color: rgb(249, 244, 233);
+	text-align: center;
+	position: absolute;
+	left: 400px;
+	top: 700px;
+	width: 1102px;
+	height: 132px;
+	z-index: 382;
+  
+  }
+
+  .scroll{
+        z-index: 11;
+        position: absolute;
+        top: 900px;
+        left: 910px;
+  }
 }
